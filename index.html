@@ -1,0 +1,80 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Sutton Seeds</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="top-bar">
+                <div class="logo">
+                    <a href="/">
+                        <img src="assets/images/cclogo.png" alt="logo">
+                    </a>
+                </div>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search here">
+                    <button type="button">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+                <div class="account-icons flex-center">
+                    <a href="">
+                        <img src="assets/images/account.png" alt="account">
+                    </a>
+                    <a class="help-icon flex-center" href>
+                        <i class="fa-solid fa-question"></i>
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <nav class="navbar">
+            <button class="menu-btn" type="button" onclick="showMenu()">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <ul class="nav-links">
+                <li>About</li>
+                <li>Shop</li>
+                <li>Top Products</li>
+                <li>Locations</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+        <main>
+            <section class="signup">
+                <div class="form-container">
+                    <form id="signup-form" class="form">
+                        <label for="nameInput">Name</label>
+                        <input type="text" id="nameInput">
+                        <label for="emailInput">Email Address</label>
+                        <input type="email" id="emailInput">
+                        <label id="phoneInputLabel" for="phoneInput">Phone</label>
+                        <input type="text" id="phoneInput">
+                        <label for="postcodeInput">Postcode</label>
+                        <input type="text" id="postcodeInput">
+                        <div id="errorMsg" class="errorMsg">
+                        </div>
+                        <div id="succesMsg" class="succesMsg"></div>
+
+                    </form>
+                    <button id="submit-signup" class="form-btn" onclick="submitForm()">Submit</button>
+                </div>
+            </section>
+        </main>
+    </div>
+    <footer>
+        &copy <span id="copy-year"></span>
+    </footer>
+    <script src="https://kit.fontawesome.com/5d85bb8342.js" crossorigin="anonymous"></script>
+    <script src="assets/index.js"></script>
+</body>
+
+</html>
